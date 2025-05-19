@@ -1,5 +1,25 @@
 ### Taller sobre Multi-threading en Java
 
+### Ejemplo propio: Procesamiento paralelo de archivos con ExecutorService
+
+En este ejemplo se implementa un caso práctico usando `ExecutorService`, donde se simula el procesamiento de tres archivos en paralelo.
+
+#### ¿Qué hace el programa?
+- Crea 3 tareas (`FileProcessor`) que simulan procesar archivos (`datos1.csv`, `datos2.csv`, `datos3.csv`).
+- Cada tarea se ejecuta en un hilo separado.
+- Se usa un pool de hilos (3 hilos en total) con `Executors.newFixedThreadPool(3)`.
+- Simula que cada archivo tarda 2 segundos en procesarse.
+
+#### Código principal (`Main.java`)
+
+### Para ejecutarlo: 
+mvn compile
+mvn exec:java -Dexec.mainClass=Main
+
+
+
+
+
 #### Objetivo
 El objetivo de este taller es aprender los conceptos fundamentales de multi-threading en Java, implementando ejemplos prácticos para entender cómo manejar múltiples hilos en una aplicación Java.
 
